@@ -1,0 +1,95 @@
+/* Navbar fija en la parte superior */
+#navbar {
+    background-color: rgba(230, 158, 70, 0.993);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        /* Esto mantiene la barra de navegación en la parte superior y ajusta el tamaño de los elementos */
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .logito{
+        height: 10px;
+    }
+
+    #navbar .navbar-links {
+        display: block;
+    }
+
+    #navbar .navbar-links a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar {
+        /* Si la pantalla es aún más pequeña, se hace un ajuste extra */
+        padding: 8px 10px;
+    }
+
+    .logito{
+        height: 5px;
+    }
+
+    #navbar .navbar-links {
+        display: block;
+    }
+
+    #navbar .navbar-links a {
+        font-size: 14px;
+    }
+}
+  
+  body {
+    padding-top: 18px; /* Da espacio para la navbar fija */
+  }
+  
+  .boton-header {
+    background-color: rgb(179, 124, 7);
+    outline: 2px solid rgb(179, 90, 17);
+    margin: 10px;
+    border-radius: 17px; /* Bordes redondeados */
+  }
+  
+  .carrusell {
+    padding-top: 13%;
+  }
+  
+  .imagen-carrusel {
+    width: 100%;
+  }
+  
+  /* Estilos para imágenes y footer */
+  .imagencentral {
+    width: 100%;
+    height: auto;
+    max-height: 800px;
+    object-fit: cover;
+  }
+  
+  .footer1 {
+    background-color: rgb(179, 124, 7);
+    padding: 20px;
+  }
+  
+  .listafooter {
+    background-color: rgb(179, 124, 7);
+    list-style: none;
+    text-align: center;
+    border: none;
+  }
+  
+  .imagenfooter {
+    width: 40px;
+    margin: 5px;
+  }
+  
